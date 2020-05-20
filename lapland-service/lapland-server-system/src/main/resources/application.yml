@@ -1,0 +1,16 @@
+server:
+  port: 8201
+
+spring:
+  application:
+    name: Lapland-Server-System
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${nacos.url}:8001
+
+security:
+  oauth2:
+    resource:
+      id: ${spring.application.name}
+      user-info-uri: http://localhost:8301/auth/user

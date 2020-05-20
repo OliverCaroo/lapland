@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/lapland-cloud/pom.xml" />
+        <option value="$PROJECT_DIR$/lapland-register/pom.xml" />
+        <option value="$PROJECT_DIR$/lapland-auth/pom.xml" />
+        <option value="$PROJECT_DIR$/lapland-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/laplamd-config/pom.xml" />
+        <option value="$PROJECT_DIR$/lapland-monitor/pom.xml" />
+        <option value="$PROJECT_DIR$/lapland-service/pom.xml" />
+        <option value="$PROJECT_DIR$/lapland-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/lapland-service/lapland-server-system/pom.xml" />
+        <option value="$PROJECT_DIR$/lapland-service/lapland-server-test/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

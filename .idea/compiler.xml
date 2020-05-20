@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="lapland-common" />
+        <module name="lapland-auth" />
+        <module name="lapland-monitor" />
+        <module name="lapland-server-test" />
+        <module name="lapland-demo" />
+        <module name="lapland-register" />
+        <module name="laplamd-config" />
+        <module name="lapland-gateway" />
+        <module name="lapland-server-system" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="laplamd-config" options="-parameters" />
+      <module name="lapland-auth" options="-parameters" />
+      <module name="lapland-common" options="-parameters" />
+      <module name="lapland-demo" options="-parameters" />
+      <module name="lapland-gateway" options="-parameters" />
+      <module name="lapland-monitor" options="-parameters" />
+      <module name="lapland-register" options="-parameters" />
+      <module name="lapland-server-system" options="-parameters" />
+      <module name="lapland-server-test" options="-parameters" />
+      <module name="lapland-service" options="-parameters" />
+    </option>
+  </component>
+</project>

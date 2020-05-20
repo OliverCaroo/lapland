@@ -1,0 +1,7 @@
+|------------------------------|
+|                              |
+|           Lapland            |
+|                              |
+|   ${spring.application.name}          |
+|   Spring-Boot: ${spring-boot.version} |
+|------------------------------|

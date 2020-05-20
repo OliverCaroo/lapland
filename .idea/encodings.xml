@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/laplamd-config" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lapland-auth" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lapland-cloud" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lapland-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lapland-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lapland-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lapland-monitor" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lapland-register" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lapland-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lapland-service/lapland-server-system" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lapland-service/lapland-server-test" charset="UTF-8" />
+  </component>
+</project>

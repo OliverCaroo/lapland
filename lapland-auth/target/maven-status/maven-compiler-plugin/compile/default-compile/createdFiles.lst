@@ -1,0 +1,6 @@
+com\my\lapland\auth\configure\LaplandSecurityConfigure.class
+com\my\lapland\auth\configure\LaplandAuthorizationServerConfigure.class
+com\my\lapland\auth\configure\LaplandResourceServerConfigure.class
+com\my\lapland\auth\controller\SecurityController.class
+com\my\lapland\auth\service\LaplandUserDetailService.class
+com\my\lapland\auth\LaplandAuthApplication.class

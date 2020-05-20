@@ -1,0 +1,33 @@
+server:
+  port: 8301
+
+spring:
+  application:
+    name: Lapland-Gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${nacos.url}:8001
+
+zuul:
+  routes:
+    auth:
+      path: /auth/**
+      serviceId: Lapland-Auth
+      sensitiveHeaders: "*"
+    system:
+      path: /system/**
+      serviceId: Lapland-Server-System
+      sensitiveHeaders: "*"
+    test:
+      path: /test/**
+      serviceId: Lapland-Server-Test
+      sensitiveHeaders: "*"
+  retryable: true
+  ignored-services: "*"
+  ribbon:
+    eager-load:
+      enabled: true
+
+ribbon:
+  ReadTimeout: 3000
