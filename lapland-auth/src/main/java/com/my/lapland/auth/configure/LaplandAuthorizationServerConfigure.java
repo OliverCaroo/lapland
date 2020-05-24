@@ -3,6 +3,7 @@ package com.my.lapland.auth.configure;
 import com.my.lapland.auth.properties.LaplandAuthProperties;
 import com.my.lapland.auth.properties.LaplandClientsProperties;
 import com.my.lapland.auth.service.LaplandUserDetailService;
+import com.my.lapland.auth.translator.LaplandWebResponseExceptionTranslator;
 import org.apache.commons.lang.ArrayUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,6 +41,8 @@ public class LaplandAuthorizationServerConfigure extends AuthorizationServerConf
     private RedisConnectionFactory redisConnectionFactory;
     @Autowired
     private LaplandAuthProperties authProperties;
+    @Autowired
+    private LaplandWebResponseExceptionTranslator exceptionTranslator;
 
     @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
@@ -72,7 +75,8 @@ public class LaplandAuthorizationServerConfigure extends AuthorizationServerConf
         endpoints.tokenStore(tokenStore())
                 .userDetailsService(userDetailService)
                 .authenticationManager(authenticationManager)
-                .tokenServices(defaultTokenServices());
+                .tokenServices(defaultTokenServices())
+                .exceptionTranslator(exceptionTranslator);
     }
 
     @Bean
