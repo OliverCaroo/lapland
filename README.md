@@ -1,2 +1,2 @@
 # lapland
-Spring cloud Platform Study
+Spring cloud Platform
