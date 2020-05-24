@@ -20,6 +20,11 @@ public class LaplandUserDetailService implements UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         log.info("username -> {}", username);
+
+//        LaplandAuthUser user = new LaplandAuthUser();
+//        user.setUsername(username);
+//        user.setPassword(this.passwordEncoder.encode("123456"));
+
         return new User(username, this.passwordEncoder.encode("123456"),
                 true, true, true, true,
                 AuthorityUtils.commaSeparatedStringToAuthorityList("user:add"));

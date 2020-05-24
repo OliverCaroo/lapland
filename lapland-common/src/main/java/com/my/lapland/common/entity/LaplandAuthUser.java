@@ -1,4 +1,4 @@
-package com.my.lapland.common;
+package com.my.lapland.common.entity;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -11,9 +11,10 @@ import java.util.Date;
 /**
  * @author yu.mei
  * @Description LaplandAuthUser
- * @create 2020/3/31 0:14
+ * @create 2020/5/24 19:00
  */
 @Data
+@SuppressWarnings("all")
 @EqualsAndHashCode(callSuper = true)
 public class LaplandAuthUser extends User {
 
@@ -43,12 +44,14 @@ public class LaplandAuthUser extends User {
 
     private String status;
 
+    private String deptIds;
+
     public LaplandAuthUser(String username, String password, Collection<? extends GrantedAuthority> authorities) {
         super(username, password, authorities);
     }
 
     public LaplandAuthUser(String username, String password, boolean enabled, boolean accountNonExpired,
-                           boolean credentialsNonExpired, boolean accountNonLocked, Collection<?
+                        boolean credentialsNonExpired, boolean accountNonLocked, Collection<?
             extends GrantedAuthority> authorities) {
         super(username, password, enabled, accountNonExpired, credentialsNonExpired, accountNonLocked, authorities);
     }

@@ -1,4 +1,4 @@
-package com.my.lapland.common;
+package com.my.lapland.common.entity;
 
 import java.util.HashMap;
 

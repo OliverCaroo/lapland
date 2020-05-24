@@ -1,6 +1,6 @@
 package com.my.lapland.auth.controller;
 
-import com.my.lapland.common.LaplandResponse;
+import com.my.lapland.common.entity.LaplandResponse;
 import com.my.lapland.common.exception.LaplandException;
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.lang3.StringUtils;
